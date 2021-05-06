@@ -8,7 +8,7 @@
 
 #include "course_table.h"
 
-#define EEPROM_SIZE 0x200
+#define EEPROM_SIZE 0x400
 #define NUM_SAVE_FILES 4
 
 struct SaveBlockSignature

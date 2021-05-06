@@ -46,7 +46,7 @@ using json = nlohmann::json;
 #define DYNAMIC_MESH_LIFETIME			30
 #define MAX_INSTANCES					1024
 #define MAX_LIGHTS						512
-#define MAX_LEVELS						39
+#define MAX_LEVELS						42
 #define MAX_AREAS						3
 #define MAX_LEVEL_LIGHTS				128
 #define LEVEL_LIGHTS_FILENAME			FS_BASEDIR "/rt64/level_lights.json"
