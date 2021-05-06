@@ -600,7 +600,7 @@ void anim_and_audio_for_walk(struct MarioState *m) {
                         val14 = (s32)(val04 / 4.0f * 0x10000);
                         set_mario_anim_with_accel(m, MARIO_ANIM_RUNNING, val14);
                         play_step_sound(m, 9, 45);
-                        targetPitch = tilt_body_running(m);
+                        //targetPitch = tilt_body_running(m);
 
                         val0C = FALSE;
                     }
@@ -847,7 +847,7 @@ s32 act_walking(struct MarioState *m) {
     }
 
     check_ledge_climb_down(m);
-    tilt_body_walking(m, startYaw);
+   // tilt_body_walking(m, startYaw);
     return FALSE;
 }
 
@@ -1243,7 +1243,7 @@ s32 act_riding_shell_ground(struct MarioState *m) {
             break;
     }
 
-    tilt_body_ground_shell(m, startYaw);
+    //tilt_body_ground_shell(m, startYaw);
     if (m->floor->type == SURFACE_BURNING) {
         play_sound(SOUND_MOVING_RIDING_SHELL_LAVA, m->marioObj->header.gfx.cameraToObject);
     } else {
@@ -1442,7 +1442,7 @@ s32 common_slide_action_with_jump(struct MarioState *m, u32 stopAction, u32 jump
 s32 act_butt_slide(struct MarioState *m) {
     s32 cancel = common_slide_action_with_jump(m, ACT_BUTT_SLIDE_STOP, ACT_JUMP, ACT_BUTT_SLIDE_AIR,
                                                MARIO_ANIM_SLIDE);
-    tilt_body_butt_slide(m);
+    //tilt_body_butt_slide(m);
     return cancel;
 }
 
@@ -1455,7 +1455,7 @@ s32 act_hold_butt_slide(struct MarioState *m) {
 
     cancel = common_slide_action_with_jump(m, ACT_HOLD_BUTT_SLIDE_STOP, ACT_HOLD_JUMP, ACT_HOLD_BUTT_SLIDE_AIR,
                                            MARIO_ANIM_SLIDING_ON_BOTTOM_WITH_LIGHT_OBJ);
-    tilt_body_butt_slide(m);
+    //tilt_body_butt_slide(m);
     return cancel;
 }
 
