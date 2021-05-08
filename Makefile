@@ -40,7 +40,7 @@ TARGET_BITS ?= 0
 # Disable better camera by default
 BETTERCAMERA ?= 0
 # Disable no drawing distance by default
-NODRAWINGDISTANCE ?= 0
+NODRAWINGDISTANCE ?= 1
 # Disable texture fixes by default (helps with them purists)
 TEXTURE_FIX ?= 0
 # Enable extended options menu by default
@@ -48,7 +48,7 @@ EXT_OPTIONS_MENU ?= 1
 # Disable text-based save-files by default
 TEXTSAVES ?= 0
 # Load resources from external files
-EXTERNAL_DATA ?= 0
+EXTERNAL_DATA ?= 1
 # Enable Discord Rich Presence
 DISCORDRPC ?= 0
 
@@ -60,7 +60,7 @@ NO_LDIV ?= 0
 # Backend selection
 
 # Renderers: GL, GL_LEGACY, D3D11, D3D12
-RENDER_API ?= GL
+RENDER_API ?= RT64
 # Window managers: SDL1, SDL2, DXGI (forced if D3D11 or D3D12 in RENDER_API)
 WINDOW_API ?= SDL2
 # Audio backends: SDL1, SDL2

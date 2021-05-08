@@ -36,13 +36,14 @@
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "shadowRayBias": 745.0
             },
             "name": "actors/bobomb/bob-omb_buddy_left_side.rgba16"
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 0.0,
+                "shadowRayBias": 437.0
             },
             "name": "actors/bobomb/bob-omb_buddy_right_side.rgba16"
         },
@@ -52,13 +53,15 @@
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 318.0
             },
             "name": "actors/bobomb/bob-omb_left_side.rgba16"
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 533.0
             },
             "name": "actors/bobomb/bob-omb_right_side.rgba16"
         },
@@ -100,13 +103,15 @@
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 319.0
             },
             "name": "actors/bully/bully_left_side.rgba16"
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 304.0
             },
             "name": "actors/bully/bully_right_side.rgba16"
         },
@@ -188,7 +193,31 @@
         },
         {
             "materialMod": null,
+            "name": "actors/flame/flame_1.ia16"
+        },
+        {
+            "materialMod": null,
+            "name": "actors/flame/flame_2.ia16"
+        },
+        {
+            "materialMod": null,
+            "name": "actors/flame/flame_3.ia16"
+        },
+        {
+            "materialMod": null,
             "name": "actors/flame/flame_4.ia16"
+        },
+        {
+            "materialMod": null,
+            "name": "actors/flame/flame_5.ia16"
+        },
+        {
+            "materialMod": null,
+            "name": "actors/flame/flame_6.ia16"
+        },
+        {
+            "materialMod": null,
+            "name": "actors/flame/flame_7.ia16"
         },
         {
             "materialMod": {
@@ -197,28 +226,48 @@
             "name": "actors/goomba/goomba_body.rgba16"
         },
         {
+            "materialMod": null,
+            "name": "actors/goomba/goomba_face_blink.rgba16"
+        },
+        {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 312.0
             },
             "name": "actors/king_bobomb/king_bob-omb_arm.rgba16"
         },
         {
+            "materialMod": null,
+            "name": "actors/king_bobomb/king_bob-omb_crown_rim.rgba16"
+        },
+        {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 376.0
             },
             "name": "actors/king_bobomb/king_bob-omb_hand.rgba16"
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 370.0
             },
             "name": "actors/king_bobomb/king_bob-omb_left_side.rgba16"
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "ignoreNormalFactor": 1.0,
+                "shadowRayBias": 352.0
             },
             "name": "actors/king_bobomb/king_bob-omb_right_side.rgba16"
+        },
+        {
+            "materialMod": {
+                "ignoreNormalFactor": 1.0,
+                "refractionFactor": 0.0,
+                "specularIntensity": 0.3499999940395355
+            },
+            "name": "actors/mad_piano/mad_piano_body.rgba16"
         },
         {
             "materialMod": null,
@@ -234,9 +283,9 @@
                     0.0,
                     0.0,
                     0.0,
-                    1.0
+                    0.0
                 ],
-                "reflectionFactor": 0.800000011920929,
+                "reflectionFactor": 0.5299999713897705,
                 "reflectionShineFactor": 1.0
             },
             "name": "actors/mario/mario_metal.rgba16"
@@ -287,6 +336,7 @@
         },
         {
             "materialMod": {
+                "depthBias": -23.0,
                 "ignoreNormalFactor": 1.0
             },
             "name": "actors/mr_i_iris/mr_i_iris_open.rgba16"
@@ -333,13 +383,13 @@
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "shadowRayBias": 362.0
             },
             "name": "actors/snowman/mr_blizzard_left_side.rgba16"
         },
         {
             "materialMod": {
-                "ignoreNormalFactor": 1.0
+                "shadowRayBias": 336.0
             },
             "name": "actors/snowman/mr_blizzard_right_side.rgba16"
         },
@@ -348,6 +398,16 @@
                 "ignoreNormalFactor": 1.0
             },
             "name": "actors/spindrift/spindrift_head.rgba16"
+        },
+        {
+            "materialMod": {
+                "selfLight": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "name": "actors/star/star_eye.rgba16"
         },
         {
             "lightMod": {
@@ -490,7 +550,8 @@
         {
             "materialMod": {
                 "reflectionFactor": 0.20000000298023224,
-                "refractionFactor": 0.8999999761581421
+                "refractionFactor": 0.8999999761581421,
+                "solidAlphaMultiplier": 0.5199999809265137
             },
             "name": "levels/bitdw/3.rgba16"
         },
@@ -515,6 +576,10 @@
         },
         {
             "materialMod": null,
+            "name": "levels/castle_inside/2.ia16"
+        },
+        {
+            "materialMod": null,
             "name": "levels/castle_inside/23_us.rgba16"
         },
         {
@@ -523,9 +588,9 @@
                     0.0,
                     0.0,
                     0.0,
-                    1.0
+                    0.0
                 ],
-                "reflectionFactor": 0.8999999761581421,
+                "reflectionFactor": 0.7300000190734863,
                 "reflectionFresnelFactor": 1.0,
                 "reflectionShineFactor": 0.75
             },
@@ -563,13 +628,25 @@
         {
             "materialMod": {
                 "lightGroupMaskBits": 0,
+                "reflectionFactor": 0.23999999463558197,
+                "reflectionFresnelFactor": 0.0,
+                "reflectionShineFactor": 1.0,
                 "selfLight": [
                     0.5,
                     0.5,
                     0.5
-                ]
+                ],
+                "solidAlphaMultiplier": 0.7799999713897705
             },
             "name": "levels/castle_inside/castle_light.ia16"
+        },
+        {
+            "materialMod": {
+                "reflectionFactor": 0.07999999821186066,
+                "reflectionFresnelFactor": 0.5899999737739563,
+                "reflectionShineFactor": 0.28999999165534973
+            },
+            "name": "levels/ccm/9.ia16"
         },
         {
             "materialMod": {
@@ -899,6 +976,10 @@
             "name": "textures/cave/hmc_textures.0C000.ia16"
         },
         {
+            "materialMod": null,
+            "name": "textures/effect/lava_bubble.02820.rgba16"
+        },
+        {
             "materialMod": {
                 "ignoreNormalFactor": 1.0
             },
@@ -977,8 +1058,18 @@
             "name": "textures/generic/bob_textures.0A800.rgba16"
         },
         {
+            "materialMod": {
+                "solidAlphaMultiplier": 0.0
+            },
+            "name": "textures/generic/bob_textures.0B000.ia16"
+        },
+        {
             "materialMod": null,
             "name": "textures/grass/wf_textures.07000.rgba16"
+        },
+        {
+            "materialMod": null,
+            "name": "textures/grass/wf_textures.08800.rgba16"
         },
         {
             "materialMod": {
@@ -1010,7 +1101,7 @@
         },
         {
             "materialMod": {
-                "reflectionFactor": 0.03999999910593033,
+                "reflectionFactor": 0.05999999865889549,
                 "reflectionFresnelFactor": 0.03999999910593033
             },
             "name": "textures/inside/inside_castle_textures.04000.rgba16"
@@ -1697,7 +1788,16 @@
             "name": "textures/segment2/segment2.13458.ia16"
         },
         {
-            "materialMod": null,
+            "materialMod": {
+                "ignoreNormalFactor": 1.0,
+                "lightGroupMaskBits": 64,
+                "selfLight": [
+                    1.2799999713897705,
+                    0.0,
+                    0.0
+                ],
+                "solidAlphaMultiplier": 1.4800000190734863
+            },
             "name": "textures/segment2/segment2.13C58.rgba16"
         },
         {
@@ -1705,7 +1805,7 @@
                 "depthBias": 25.0,
                 "lightGroupMaskBits": 0,
                 "shadowAlphaMultiplier": 0.0,
-                "solidAlphaMultiplier": 0.800000011920929
+                "solidAlphaMultiplier": 0.8799999952316284
             },
             "name": "textures/segment2/shadow_quarter_circle.ia8"
         },
